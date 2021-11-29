@@ -1,0 +1,157 @@
+/* ---------------------- FONTS ---------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+  *{
+    margin: 0;
+}
+/* --------------------- HEADER AND GLOWING TEXT --------------------- */
+header {
+    padding: 20px;
+    text-align: center;
+    background-color:  #04040d;
+    width: 100%;
+    border-bottom: 2px solid black;
+    box-shadow: #0a0a15;
+}
+
+.glowing{
+    color: #9999ff;
+    transition: 1s all ease;
+    animation: glow-1 1.3s infinite;
+    text-shadow: 2px 2px 2px #260033;
+
+}
+
+@keyframes glow-1 {
+    0%,
+    100% {
+        color: #884dff;
+        text-shadow: 2px 2px 2px #9900cc;
+    }
+    50%{
+        color: #9999ff;
+        text-shadow: 2px 2px 2px #260033;
+    }
+}
+
+
+/* --------------------- BODY --------------------- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0d0d0d;
+    color: #c4c4c4;
+}
+
+main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ChooseQuiz {
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 7px 7px 5px; /* top - right - bottom - left */
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    background-color:#070707;
+    transition: 0.3s;
+    outline: none;
+    text-decoration: none;
+}
+
+.ChooseQuiz:hover {
+    margin-top: 20px;
+}
+
+.ChooseQuiz img {
+    margin-top: 40px;
+    width: 60%;
+    height: 60%;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    text-decoration: none;
+    color: #9999ff;
+}
+
+a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+/* ------------------------------ QUIZZES ---------------------- */
+
+.Quiz {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #070707;
+    width: 700px;
+}
+
+
+
+
+#First:hover, #Second:hover, #Third:hover, #Fourth:hover, #check:hover{
+    padding: 21px;
+}
+/*
+input[type=radio] {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+*/
+.notclicked{
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    width: 500px;
+    border: 1px solid #04040d;
+    border-radius: 3px;
+    transition: 0.3s;
+    background-color: #070707;
+
+}
+
+.check {
+    margin: 10px;
+    text-align: left;
+    width: 500px;
+    border: 1px solid #070707;
+    border-radius: 3px;
+    transition: 0.3s;
+    background-color: #04040d;
+    padding: 15px;
+    box-shadow: 0 0 3px #c4c4c4;
+}
+
