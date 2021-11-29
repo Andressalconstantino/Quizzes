@@ -109,28 +109,29 @@ a:visited {
 .Quiz {
     padding: 20px;
     margin: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
     border: 1px solid #070707;
     width: 700px;
+    background-color: #070707;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0a0a21;
 }
 
 
-
-
-#First:hover, #Second:hover, #Third:hover, #Fourth:hover, #check:hover{
+#FirstU:hover, #SecondU:hover, #ThirdU:hover, #FourthU:hover, #check:hover, #FirstD:hover, #SecondD:hover, #ThirdD:hover, #FourthD:hover, #FirstT:hover, #SecondT:hover, #ThirdT:hover, #FourthT:hover, #FirstQ:hover, #SecondQ:hover, #ThirdQ:hover, #FourthQ:hover, #FirstC:hover, #SecondC:hover, #ThirdC:hover, #FourthC:hover{
     padding: 21px;
 }
-/*
+
 input[type=radio] {
     opacity: 0;
     height: 0;
     width: 0;
 }
-*/
+
 .notclicked{
     padding: 15px;
     margin: 10px;
@@ -139,7 +140,7 @@ input[type=radio] {
     border: 1px solid #04040d;
     border-radius: 3px;
     transition: 0.3s;
-    background-color: #070707;
+    background-color: #0a0a0a;
 
 }
 
@@ -155,3 +156,26 @@ input[type=radio] {
     box-shadow: 0 0 3px #c4c4c4;
 }
 
+button {
+    width: 90px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #0a0a21;
+    border: none;
+    color: #c4c4c4;
+    border-radius: 3px;
+}
+
+button:hover{
+    box-shadow: 0 0 3px #c4c4c4;
+}
+
+#Resultado {
+    color: #c4c4c4;
+}
+
+.Quiz img{
+    width: 30%;
+    margin: 30px;
+}
