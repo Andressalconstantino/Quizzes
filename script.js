@@ -9,7 +9,7 @@ function displayPage(num){
     currentPage[num].style.display = 'flex';
 }
 
-
+/* -----------------------  BUTTONS --------------------------- */
 const nextU = document.getElementById('nextU');
 const nextD = document.getElementById('nextD');
 const backD = document.getElementById('backD');
@@ -35,10 +35,13 @@ backQ.addEventListener('click', bac);
 backC.addEventListener('click', bac);
 reset.addEventListener('click', rese);
 
+let startTimer;
+
 function star(){
     currentPage[num].style.display = 'none';
     num++;
     displayPage(num);
+    startTimer = Date.now();
 }
 
 function nex(){
@@ -59,8 +62,23 @@ function rese(){
     displayPage(num);
 }
 
+function secondsToHSM(value) {
+    const sec = parseInt(value, 10); // convert value to number if it's string
+    let hours   = Math.floor(sec / 3600); // get hours
+    let minutes = Math.floor((sec - (hours * 3600)) / 60); // get minutes
+    let seconds = sec - (hours * 3600) - (minutes * 60); //  get seconds
+    // add 0 if value < 10; Example: 2 => 02
+    if (hours   < 10) {hours   = "0"+hours;}
+    if (minutes < 10) {minutes = "0"+minutes;}
+    if (seconds < 10) {seconds = "0"+seconds;}
+    document.getElementById('timer').innerHTML = 'Time you took to complete the quiz: &nbsp;&nbsp;&nbsp;' + hours.toString() + ':' + minutes.toString() + ':' + seconds.toString(); // Return is HH : MM : SS
+}
+
 function Res(){
     let result = 0;
+
+    const seconds = (Date.now() - parseInt(startTimer, 10))/1000;
+    secondsToHSM(seconds);
 
     const one = document.getElementsByName('cppU');
     let answer1;
@@ -69,6 +87,7 @@ function Res(){
             answer1 = one[i].value;
         }
     }
+
 
     if (answer1 === 'r'){
         result++;
@@ -124,7 +143,7 @@ function Res(){
         document.getElementById('rq').innerHTML = 'You passed the test! :)'
     }
     else{
-        document.getElementById('rq').innerHTML = 'You failed the test" :('
+        document.getElementById('rq').innerHTML = 'You failed the test :('
     }
     currentPage[num].style.display = 'none';
     num++;
@@ -132,7 +151,7 @@ function Res(){
 
 }
 
-/* --------------------- First Question C++ ----------------------- */
+/* --------------------- First Question ----------------------- */
 
 document.getElementById('oneU').addEventListener('click', function (){
     document.getElementById('FirstU').setAttribute('class', 'check');
@@ -162,7 +181,7 @@ document.getElementById('fourU').addEventListener('click', function (){
     document.getElementById('FourthU').setAttribute('class', 'check');
 });
 
-/* -------------------- SECOND QUESTION C++ -------------------- */
+/* -------------------- SECOND QUESTION  -------------------- */
 
 document.getElementById('oneD').addEventListener('click', function (){
     document.getElementById('FirstD').setAttribute('class', 'check');
@@ -192,7 +211,7 @@ document.getElementById('fourD').addEventListener('click', function (){
     document.getElementById('FourthD').setAttribute('class', 'check');
 });
 
-/* -------------------- THIRD QUESTION C++ -------------------- */
+/* -------------------- THIRD QUESTION -------------------- */
 
 document.getElementById('oneT').addEventListener('click', function (){
     document.getElementById('FirstT').setAttribute('class', 'check');
@@ -222,7 +241,7 @@ document.getElementById('fourT').addEventListener('click', function (){
     document.getElementById('FourthT').setAttribute('class', 'check');
 });
 
-/* -------------------- FOURTH QUESTION C++ -------------------- */
+/* -------------------- FOURTH QUESTION -------------------- */
 
 document.getElementById('oneQ').addEventListener('click', function (){
     document.getElementById('FirstQ').setAttribute('class', 'check');
@@ -252,7 +271,7 @@ document.getElementById('fourQ').addEventListener('click', function (){
     document.getElementById('FourthQ').setAttribute('class', 'check');
 });
 
-/* -------------------- FIFTH QUESTION C++ -------------------- */
+/* -------------------- FIFTH QUESTION -------------------- */
 
 document.getElementById('oneC').addEventListener('click', function (){
     document.getElementById('FirstC').setAttribute('class', 'check');

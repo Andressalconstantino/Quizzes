@@ -41,11 +41,12 @@ header {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     align-content: center;
     justify-content: center;
     text-align: center;
+    align-items: center;
     background-color: #0d0d0d;
     color: #c4c4c4;
 }
@@ -83,6 +84,7 @@ main {
 
 .ChooseQuiz:hover {
     margin-top: 20px;
+    box-shadow: 0 0 20px #0a0a21;
 }
 
 .ChooseQuiz img {
@@ -105,10 +107,23 @@ a:visited {
 }
 
 /* ------------------------------ QUIZZES ---------------------- */
+span{
+    padding: 20px;
+}
+
+.btnq{
+    float: left;
+    margin-left: -75%;
+    width: 100px;
+    margin-top: -0%;
+
+}
+
+
 
 .Quiz {
     padding: 20px;
-    margin: 20px;
+    margin-top: -2%;
     display: none;
     flex-direction: column;
     align-content: center;

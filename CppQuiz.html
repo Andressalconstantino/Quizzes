@@ -10,10 +10,11 @@
             <h1 class="glowing">C++ Quiz</h1>
         </header>
         <div class="container">
+            <div class="btnq"> <a href="index.html"> <button class="glowing"> <-- Quizzes </button></a></div>
             <div class="Quiz">
                 <h3>Are you ready to start the quiz?</h3>
                 <img src="https://cdn-icons-png.flaticon.com/512/3406/3406838.png">
-                <button id="start">Start</button>
+                <button class="glowing" id="start">Start</button>
             </div>
             <div class="Quiz">
                 <h3>What is a correct syntax to output "Hello World" in C++?</h3>
@@ -61,9 +62,11 @@
             </div>
 
             <div class="Quiz">
+                <span id="timer"></span>
                 <span id="Resultado"></span>
                 <span id="rq"></span>
-                <button id="reset">Try Again</button>
+
+                <button class="glowing" id="reset">Try Again</button>
             </div>
 
             <script src="script.js"></script>

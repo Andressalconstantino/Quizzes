@@ -13,5 +13,69 @@
             <h1 class="glowing">JavaScript Quiz</h1>
         </header>
 
+        <div class="container">
+            <div class="btnq"> <a href="index.html"> <button class="glowing"> <-- Quizzes </button></a></div>
+            <div class="Quiz">
+                <h3>Are you ready to start the quiz?</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/3406/3406838.png">
+                <button class="glowing" id="start">Start</button>
+            </div>
+            <div class="Quiz">
+                <h3>JavaScript is a ___ -side programming language</h3>
+                <label><div id="FirstU" class="notclicked"> <input autocomplete="off" type="radio" name="cppU" value="w" id="oneU"> Client </div></label>
+                <label><div id="SecondU" class="notclicked"><input autocomplete="off" type="radio" name="cppU" value="w" id="twoU"> Server </div></label>
+                <label><div id="ThirdU" class="notclicked"><input autocomplete="off" type="radio" name="cppU" value="r" id="threeU"> Both </div></label>
+                <label><div id="FourthU" class="notclicked"> <input autocomplete="off" type="radio" name="cppU" value="w" id="fourU">  None </div></label>
+                <button id="nextU">Next</button>
+            </div>
+
+            <div class="Quiz">
+                <h3>Which of the following will write the message “Hello World!” in an alert box?</h3>
+                <label><div id="FirstD" class="notclicked"> <input autocomplete="off" type="radio" name="cppD" value="w" id="oneD"> alertBox(“Hello World!”);</div></label>
+                <label><div id="SecondD" class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" id="twoD"> alert(Hello World!); </div></label>
+                <label><div id="ThirdD" class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" id="threeD">  msgAlert(“Hello World!”); </div></label>
+                <label><div id="FourthD" class="notclicked"> <input autocomplete="off" type="radio" name="cppD" value="r" id="fourD">  alert(“Hello World!”);</div></label>
+                <div class="button"><button id="backD">Back</button> <button id="nextD">Next</button></div>
+            </div>
+
+            <div class="Quiz">
+                <h3>If the value of x is 40, then what is the output of the following program?<br>
+                    (x % 10 == 0)? console.log(“Divisible by 10”) : console.log(“Not divisible by 10”); </h3>
+                <label><div id="FirstT" class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w" id="oneT"> ReferenceError </div></label>
+                <label><div id="SecondT" class="notclicked"><input autocomplete="off" type="radio" name="cppT" value="r" id="twoT"> Divisible by 10 </div></label>
+                <label><div id="ThirdT" class="notclicked"><input autocomplete="off" type="radio" name="cppT" value="w" id="threeT"> Not divisible by 10  </div></label>
+                <label><div id="FourthT" class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w" id="fourT"> None of the above </div></label>
+                <div class="button"><button id="backT">Back</button> <button id="nextT">Next</button></div>
+            </div>
+
+            <div class="Quiz">
+                <h3>How do you find the minimum of x and y using JavaScript?</h3>
+                <label><div id="FirstQ" class="notclicked"> <input autocomplete="off" type="radio" name="cppQ" value="w" id="oneQ"> min(x, y) </div></label>
+                <label><div id="SecondQ" class="notclicked"><input autocomplete="off" type="radio" name="cppQ" value="r" id="twoQ">  Math.min(x, y) </div></label>
+                <label><div id="ThirdQ" class="notclicked"><input autocomplete="off" type="radio" name="cppQ" value="w" id="threeQ"> Math.min(xy) </div></label>
+                <label><div id="FourthQ" class="notclicked"> <input autocomplete="off" type="radio" name="cppQ" value="w" id="fourQ"> min(xy) </div></label>
+                <div class="button"><button id="backQ">Back</button> <button id="nextQ">Next</button></div>
+            </div>
+
+            <div class="Quiz">
+                <h3>Which JavaScript label catches all the values, except for the ones specified</h3>
+                <label><div id="FirstC" class="notclicked"> <input autocomplete="off" type="radio" name="cppC" value="w" id="oneC"> Catch </div></label>
+                <label><div id="SecondC" class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w" id="twoC"> Label </div></label>
+                <label><div id="ThirdC" class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w" id="threeC"> Try </div></label>
+                <label><div id="FourthC" class="notclicked"> <input autocomplete="off" type="radio" name="cppC" value="r" id="fourC">  Default </div></label>
+                <div class="button"><button id="backC">Back</button> <button id="Res">Result</button></div>
+            </div>
+
+            <div class="Quiz">
+                <span id="timer"></span>
+                <span id="Resultado"></span>
+                <span id="rq"></span>
+
+                <button class="glowing" id="reset">Try Again</button>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+
     </body>
 </html>

@@ -11,5 +11,68 @@
         <h1 class="glowing">Python Quiz</h1>
     </header>
 
+    <div class="container">
+        <div class="btnq"> <a href="index.html"> <button class="glowing"> <-- Quizzes </button></a></div>
+        <div class="Quiz">
+            <h3>Are you ready to start the quiz?</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/3406/3406838.png">
+            <button class="glowing" id="start">Start</button>
+        </div>
+        <div class="Quiz">
+            <h3>What is a correct syntax to output "Hello World" in Python?</h3>
+            <label><div id="FirstU" class="notclicked"> <input autocomplete="off" type="radio" name="cppU" value="r" id="oneU"> print('hello world')</div></label>
+            <label><div id="SecondU" class="notclicked"><input autocomplete="off" type="radio" name="cppU" value="w" id="twoU"> p('hello world') </div></label>
+            <label><div id="ThirdU" class="notclicked"><input autocomplete="off" type="radio" name="cppU" value="w" id="threeU"> echo "hello world" </div></label>
+            <label><div id="FourthU" class="notclicked"> <input autocomplete="off" type="radio" name="cppU" value="w" id="fourU">  echo ('hello world') </div></label>
+            <button id="nextU">Next</button>
+        </div>
+
+        <div class="Quiz">
+            <h3>Which one is NOT a legal variable name?</h3>
+            <label><div id="FirstD" class="notclicked"> <input autocomplete="off" type="radio" name="cppD" value="w" id="oneD"> Myvar</div></label>
+            <label><div id="SecondD" class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" id="twoD"> my_var </div></label>
+            <label><div id="ThirdD" class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" id="threeD"> _myvar </div></label>
+            <label><div id="FourthD" class="notclicked"> <input autocomplete="off" type="radio" name="cppD" value="r" id="fourD"> my-var </div></label>
+            <div class="button"><button id="backD">Back</button> <button id="nextD">Next</button></div>
+        </div>
+
+        <div class="Quiz">
+            <h3>What is the correct file extension for Python files?</h3>
+            <label><div id="FirstT" class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w" id="oneT"> .pt </div></label>
+            <label><div id="SecondT" class="notclicked"><input autocomplete="off" type="radio" name="cppT" value="w" id="twoT"> .pyth </div></label>
+            <label><div id="ThirdT" class="notclicked"><input autocomplete="off" type="radio" name="cppT" value="r" id="threeT"> .py </div></label>
+            <label><div id="FourthT" class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w" id="fourT"> .pyt </div></label>
+            <div class="button"><button id="backT">Back</button> <button id="nextT">Next</button></div>
+        </div>
+
+        <div class="Quiz">
+            <h3>What is the correct syntax to output the type of a variable or object in Python?</h3>
+            <label><div id="FirstQ" class="notclicked"> <input autocomplete="off" type="radio" name="cppQ" value="r" id="oneQ"> print(type(x)) </div></label>
+            <label><div id="SecondQ" class="notclicked"><input autocomplete="off" type="radio" name="cppQ" value="w" id="twoQ">  print(typeof x) </div></label>
+            <label><div id="ThirdQ" class="notclicked"><input autocomplete="off" type="radio" name="cppQ" value="w" id="threeQ"> print(typeOf(x)) </div></label>
+            <label><div id="FourthQ" class="notclicked"> <input autocomplete="off" type="radio" name="cppQ" value="w" id="fourQ"> print(typeof(x)) </div></label>
+            <div class="button"><button id="backQ">Back</button> <button id="nextQ">Next</button></div>
+        </div>
+
+        <div class="Quiz">
+            <h3>Which method can be used to remove any whitespace from both the beginning and the end of a string?</h3>
+            <label><div id="FirstC" class="notclicked"> <input autocomplete="off" type="radio" name="cppC" value="w" id="oneC"> trim() </div></label>
+            <label><div id="SecondC" class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w" id="twoC"> ptrim() </div></label>
+            <label><div id="ThirdC" class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w" id="threeC"> len() </div></label>
+            <label><div id="FourthC" class="notclicked"> <input autocomplete="off" type="radio" name="cppC" value="r" id="fourC">  strip() </div></label>
+            <div class="button"><button id="backC">Back</button> <button id="Res">Result</button></div>
+        </div>
+
+        <div class="Quiz">
+            <span id="timer"></span>
+            <span id="Resultado"></span>
+            <span id="rq"></span>
+
+            <button class="glowing" id="reset">Try Again</button>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+
     </body>
 </html>
