@@ -71,7 +71,56 @@
                 <span id="Resultado"></span>
                 <span id="rq"></span>
 
-                <button class="glowing" id="reset">Try Again</button>
+                <button class="glowing" id="reset">Try Again</button> <button class="glowingGreen" id="cAns">Correct Answers</button>
+            </div>
+
+            <div class="result">
+                <span class="glowing" id="arrow"> &darr; </span>
+                <div class="tab">
+                    <h3>JavaScript is a ___ -side programming language</h3>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppU" value="w" > Client </div></label>
+                    <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppU" value="w" > Server </div></label>
+                    <label><div class="right"><input autocomplete="off" type="radio" name="cppU" value="r" > Both </div></label>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppU" value="w" >  None </div></label>
+
+                </div>
+
+                <div class="tab">
+                    <h3>Which of the following will write the message “Hello World!” in an alert box?</h3>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppD" value="w" > alertBox(“Hello World!”);</div></label>
+                    <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" > alert(Hello World!); </div></label>
+                    <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" >  msgAlert(“Hello World!”); </div></label>
+                    <label><div class="right"> <input autocomplete="off" type="radio" name="cppD" value="r" >  alert(“Hello World!”);</div></label>
+
+                </div>
+
+                <div class="tab">
+                    <h3>If the value of x is 40, then what is the output of the following program?<br>
+                        (x % 10 == 0)? console.log(“Divisible by 10”) : console.log(“Not divisible by 10”); </h3>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w" > ReferenceError </div></label>
+                    <label><div class="right"><input autocomplete="off" type="radio" name="cppT" value="r" > Divisible by 10 </div></label>
+                    <label><div  class="notclicked"><input autocomplete="off" type="radio" name="cppT" value="w" > Not divisible by 10  </div></label>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w" > None of the above </div></label>
+
+                </div>
+
+                <div class="tab">
+                    <h3>How do you find the minimum of x and y using JavaScript?</h3>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppQ" value="w" > min(x, y) </div></label>
+                    <label><div class="right"><input autocomplete="off" type="radio" name="cppQ" value="r" >  Math.min(x, y) </div></label>
+                    <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppQ" value="w" > Math.min(xy) </div></label>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppQ" value="w" > min(xy) </div></label>
+
+                </div>
+
+                <div class="tab">
+                    <h3>Which JavaScript label catches all the values, except for the ones specified</h3>
+                    <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppC" value="w" > Catch </div></label>
+                    <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w" > Label </div></label>
+                    <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w" > Try </div></label>
+                    <label><div class="right"> <input autocomplete="off" type="radio" name="cppC" value="r" >  Default </div></label>
+
+                </div>
             </div>
 
             <script src="script.js"></script>

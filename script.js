@@ -9,6 +9,12 @@ function displayPage(num){
     currentPage[num].style.display = 'flex';
 }
 
+const cAns = document.getElementById('cAns');
+cAns.addEventListener('click', function (){
+    const page = document.getElementsByClassName('result');
+    page[0].style.display = 'flex';
+})
+
 /* -----------------------  BUTTONS --------------------------- */
 const nextU = document.getElementById('nextU');
 const nextD = document.getElementById('nextD');

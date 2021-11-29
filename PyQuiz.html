@@ -68,7 +68,55 @@
             <span id="Resultado"></span>
             <span id="rq"></span>
 
-            <button class="glowing" id="reset">Try Again</button>
+            <button class="glowing" id="reset">Try Again</button> <button class="glowingGreen" id="cAns">Correct Answers</button>
+        </div>
+
+        <div class="result">
+            <span class="glowing" id="arrow"> &darr; </span>
+            <div class="tab">
+                <h3>What is a correct syntax to output "Hello World" in Python?</h3>
+                <label><div class="right"> <input autocomplete="off" type="radio" name="cppU" value="r" > print('hello world')</div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppU" value="w" > p('hello world') </div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppU" value="w" > echo "hello world" </div></label>
+                <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppU" value="w" ">  echo ('hello world') </div></label>
+
+            </div>
+
+            <div class="tab">
+                <h3>Which one is NOT a legal variable name?</h3>
+                <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppD" value="w" > Myvar</div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" > my_var </div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppD" value="w" > _myvar </div></label>
+                <label><div class="right"> <input autocomplete="off" type="radio" name="cppD" value="r" > my-var </div></label>
+
+            </div>
+
+            <div class="tab">
+                <h3>What is the correct file extension for Python files?</h3>
+                <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w" > .pt </div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppT" value="w" > .pyth </div></label>
+                <label><div class="right"><input autocomplete="off" type="radio" name="cppT" value="r"> .py </div></label>
+                <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppT" value="w"> .pyt </div></label>
+
+            </div>
+
+            <div class="tab">
+                <h3>What is the correct syntax to output the type of a variable or object in Python?</h3>
+                <label><div class="right"> <input autocomplete="off" type="radio" name="cppQ" value="r" > print(type(x)) </div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppQ" value="w" >  print(typeof x) </div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppQ" value="w" > print(typeOf(x)) </div></label>
+                <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppQ" value="w" > print(typeof(x)) </div></label>
+
+            </div>
+
+            <div class="tab">
+                <h3>Which method can be used to remove any whitespace from both the beginning and the end of a string?</h3>
+                <label><div class="notclicked"> <input autocomplete="off" type="radio" name="cppC" value="w" > trim() </div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w" > ptrim() </div></label>
+                <label><div class="notclicked"><input autocomplete="off" type="radio" name="cppC" value="w"> len() </div></label>
+                <label><div class="right"> <input autocomplete="off" type="radio" name="cppC" value="r">  strip() </div></label>
+
+            </div>
         </div>
 
         <script src="script.js"></script>
