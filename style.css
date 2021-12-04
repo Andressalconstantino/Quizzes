@@ -20,15 +20,13 @@ header {
     color: #9999ff;
     transition: 1s all ease;
     animation: glow-1 1.3s infinite;
-    text-shadow: 2px 2px 2px #260033;
 
 }
 
 .glowingGreen{
-    color: #e6ffe6;
+    color: #b3ffb3;
     transition: 1s all ease;
     animation: glow-2 1.3s infinite;
-    text-shadow: 1px 1px 1px #260033;
 
 }
 
@@ -41,23 +39,20 @@ header {
     0%,
     100% {
         color: #884dff;
-        text-shadow: 1px 1px 1px #9900cc;
     }
     50%{
         color: #9999ff;
-        text-shadow: 1px 1px 1px #260033;
     }
 }
 
 @keyframes glow-2 {
     0%,
     100% {
-        color: #e6ffe6;
-        text-shadow: 2px 2px 2px #33ff33;
+        color: #80ff80;
     }
     50%{
-        color: #e6ffe6;
-        text-shadow: 2px 2px 2px #e6ffe6;
+        color: #99ff99;
+
     }
 }
 
@@ -192,12 +187,11 @@ input[type=radio] {
     margin: 10px;
     text-align: left;
     width: 500px;
-    border: 1px solid #070707;
+    border: 1px solid #c4c4c4;
     border-radius: 3px;
     transition: 0.3s;
     background-color: #04040d;
     padding: 15px;
-    box-shadow: 0 0 3px #c4c4c4;
 }
 
 button {
@@ -212,7 +206,7 @@ button {
 }
 
 button:hover{
-    box-shadow: 0 0 3px #c4c4c4;
+    opacity: 0.5;
 }
 
 #Resultado {
@@ -224,7 +218,7 @@ button:hover{
     margin: 30px;
 }
 
-/* --------------------- RESULST --------------------- */
+/* --------------------- RESULTS --------------------- */
 
 
 
